@@ -4,6 +4,7 @@
 
 ## · Desarrollado en HTML5, CSS3 y JavaScript.
 ### · Animado con librerìa AOS (Animation on scroll) 
+### · Full responsive
 
 ![icon-footer (2)](https://user-images.githubusercontent.com/104522465/205454094-57bcdbc6-92ac-4a98-9f4b-045f7b35f2bd.png)
 
