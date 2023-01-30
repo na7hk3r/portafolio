@@ -40,7 +40,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 ::selection {
-    background-color: #776254;
+    background-color: var(--beaver);
 }
 
 /* Header */
