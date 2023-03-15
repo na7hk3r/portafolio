@@ -40,7 +40,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 ::selection {
-    background-color: #776254;
+    background-color: var(--beaver);
 }
 
 /* Header */
@@ -462,7 +462,7 @@ span+span {
 
 .cards--habilidades img {
     margin-top: .7rem;
-    width: 9rem;
+    width: 8rem;
 }
 
 .cards--habilidades p {
@@ -736,8 +736,8 @@ img.logo-jap {
 }
 
 .form-contact .input-invalid {
-    border: 1px solid #574438;
-    color: #574438;
+    border: 1px solid var(--beaver);
+    color: var(--beaver);
 }
 
 .form-contact textarea {
@@ -764,12 +764,12 @@ img.logo-jap {
 }
 
 .form-contact textarea::-webkit-scrollbar-track {
-    background-color: #776254;
+    background-color: var(--beaver);
 }
 
 
 .form-contact textarea::-webkit-scrollbar-thumb {
-    background-color: #574438;
+    background-color: var(--beaver);
 }
 
 
