@@ -522,17 +522,20 @@ span+span {
 }
 
 img.logo-voxy {
-    width: 24rem;
+    width: 80%;
+    height: auto;
 }
 
 img.logo-fcc {
-    width: 20rem;
-    margin: 7rem 0 6rem 0;
+    margin-top:50px;
+    width: 80%;
+    height: auto;
 }
 
 img.logo-jap {
-    width: 16rem;
-    margin: 4rem 0;
+    margin-top: 20px;
+    width: 70%;
+    height: auto;
 }
 
 .cards--formacion p:nth-child(1) {
