@@ -440,3 +440,17 @@
     padding: 4rem 3rem;
   }
 }
+
+/*    Mobile Corrections    */
+@media screen and (max-width: 480px) {
+  .switch {
+    right: 5rem;
+  }
+}
+
+/*    Tablet Corrections    */
+@media screen and (min-width: 760px) and (max-width: 980px) {
+  .switch {
+    right: 5rem;
+  }
+}
