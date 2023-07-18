@@ -423,6 +423,11 @@ input:checked + .slider:before {
   transition: 0.3s ease-in-out;
 }
 
+.links img:hover {
+    transform: scale(1.5);
+    transition:.3s ease-in-out;
+    }
+
 /* Sobre mí */
 
 .sobreMi {
@@ -932,6 +937,11 @@ footer {
 .container_redes-footer i:hover {
   transform: scale(1.5);
   transition: 0.3s ease-in-out;
+}
+
+.container_redes-footer img:hover {
+transform: scale(1.5);
+transition:.3s ease-in-out;
 }
 
 .container_text--footer {
