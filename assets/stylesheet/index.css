@@ -45,12 +45,12 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-    background-color: var();
+    background-color: var(--background1);
 }
 
 
 html::-webkit-scrollbar-thumb {
-    background-color: var();;
+    background-color: var(--background2);;
 }
 
 ::selection {
@@ -60,7 +60,7 @@ html::-webkit-scrollbar-thumb {
 /* Header */
 
 .header {
-    background-color: var(--primary);
+    background-color: var(--background1);
     padding: 1.5rem 3rem;
     display: flex;
     justify-content: space-between;
@@ -412,9 +412,11 @@ input:checked + .slider:before {
     padding: 2rem 0 6rem 0;
 }
 
-.links img {
-    width: 2.4rem;
-    margin: 0 .5rem;
+
+.links i {
+    margin: 1rem .5rem;
+    color: var(--primary);
+    font-size: 2em;
 }
 
 /* Sobre mí */
@@ -730,14 +732,16 @@ img.logo-jap {
     transition: all .4s ease;
 }
 
-.btn_demo img {
-    width: 2rem;
+.btn_demo i {
+    font-size: 1.5em;
     margin-right: .8rem;
+    color: var(--primary);
 }
 
-.btn_repo img {
-    width: 2rem;
+.btn_repo i {
+    font-size: 1.5em;
     margin-right: .8rem;
+    color: var(--primary);
 }
 
 /* Contacto */
@@ -874,11 +878,10 @@ img.logo-jap {
 /* Footer */
 
 footer {
-    background-color: var();
+    background-color: var(--background1);
 }
 
 .contianer--footer {
-    border-top: 1px solid var();
     width: 90%;
     margin: 0 auto;
     padding-top: 4rem;
@@ -888,7 +891,7 @@ footer {
 }
 
 .link_home a {
-    color: var();
+    color: var(--primary);
     font-size: 3rem;
     font-family: 'Cooper Hewitt';
     text-decoration: none;
@@ -904,7 +907,7 @@ footer {
 }
 
 .container_links--footer a {
-    color: var();
+    color: var(--primary);
     font-family: 'Cooper Hewitt';
     font-size: 1.6rem;
     margin: 0 .8rem;
@@ -915,9 +918,11 @@ footer {
     text-decoration: none;
 }
 
-.container_redes-footer img {
+.container_redes-footer i {
     width: 3.5rem;
     margin: 0 .5rem 1.5rem .5rem;
+    font-size: 3em;
+    color: var(--primary);
 }
 
 .container_text--footer {
@@ -932,7 +937,7 @@ footer {
 
 .container_text--footer span:nth-child(1),
 .container_text--footer span:nth-child(3) {
-    color: var();
+    color: var(--primary);
 }
 
 .container_text--footer img {
@@ -941,7 +946,7 @@ footer {
 }
 
 .container_text--footer span:nth-child(4) {
-    color: var();
+    color: var(--primary);
 }
 
 /* Botón ir arriba */
@@ -958,7 +963,7 @@ footer {
 .go-top-button {
     width: 0rem;
     height: 0rem;
-    background: var();
+    background: var(--background2);
     box-shadow: 0px 6px 22px -6px rgba(0,0,0,0.75);
     border-radius: 50%;
     cursor: pointer;
@@ -975,7 +980,7 @@ footer {
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    color: var();
+    color: var(--primary);
     transition: .2s;
 }
 
