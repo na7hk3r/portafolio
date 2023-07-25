@@ -18,15 +18,6 @@
   --secondary: #c0c0c0;
 }
 
-/* :root {
-    --white: #FFFFFF;
-    --light-grey: #D9D9D9;
-    --beaver: #3e8d92;
-    --black: #141414;
-    --eerie-black: #1F1F1F;
-    --jet: #292929;
-} */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -575,18 +566,18 @@ input:checked + .slider:before {
 }
 
 .cards--formacion {
+  align-items: center;
   background-color: #292929;
   border-radius: 24px;
+  color: #faf9f6;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 32rem;
   height: 33rem;
+  justify-content: space-between;
   margin: 0 1rem 2rem 1rem;
   padding: 1rem;
-  justify-content: space-between;
-  color: #faf9f6;
+  text-align: center;
+  width: 32rem;
 }
 
 .cards--formacion img {
@@ -597,22 +588,6 @@ input:checked + .slider:before {
   margin-bottom: 1.3rem;
 }
 
-img.logo-voxy {
-  width: 80%;
-  height: auto;
-}
-
-img.logo-fcc {
-  margin-top: 50px;
-  width: 80%;
-  height: auto;
-}
-
-img.logo-jap {
-  margin-top: 20px;
-  width: 70%;
-  height: auto;
-}
 
 .cards--formacion p:nth-child(1) {
   color: #faf9f6;
@@ -687,6 +662,7 @@ img.logo-jap {
 .container_imgCard--proyectos img {
   width: 100%;
   border-radius: 20px 20px 0 0;
+  height: 20rem;
 }
 
 .container_textCard--proyectos {
