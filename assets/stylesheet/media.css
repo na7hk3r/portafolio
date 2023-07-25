@@ -1,7 +1,6 @@
-/*  1   Tablet      */
+/***     Tablet      ***/
 @media screen and (min-width: 760px) {
   /* Header */
-
   .logo {
     font-size: 2.2rem;
   }
@@ -13,7 +12,6 @@
   }
 
   /* Home */
-
   .image_home {
     max-width: 50rem;
   }
@@ -34,7 +32,6 @@
   }
 
   /* Sobre mi */
-
   .sobreMi {
     padding: 0 2rem;
     display: flex;
@@ -67,24 +64,21 @@
   }
 
   /* Habilidades */
-
   .cards_container--habilidades {
     column-gap: 4rem;
   }
 
   /* Formación */
-
   .cards_container--formacion {
     flex-wrap: wrap;
     flex-direction: row;
   }
 
   .cards--formacion {
-    margin: 0 2rem 3rem 2rem;
+    margin: 3rem;
   }
 
   /* Proyectos */
-
   .cards--proyectos {
     max-width: 48rem;
   }
@@ -96,10 +90,34 @@
   }
 }
 
-/*      Desktop     */
+/***    Mobile - Tablet Fix    ***/
+@media screen and (max-width: 480px) {
+  .switch {
+    right: 5rem;
+  }
+
+ .cards_container--formacion{
+  align-items:center;
+  height: auto;
+  width: 100%;
+ }
+}
+
+.cards--formacion{
+  width: 28rem;
+  height: 30rem;
+  gap: .8em;
+}
+
+@media screen and (min-width: 760px) and (max-width: 980px) {
+  .switch {
+    right: 5rem;
+  }
+}
+
+/***      Desktop     ***/
 @media screen and (min-width: 980px) {
   /* Header */
-
   .header {
     justify-content: flex-end;
     z-index: 2;
@@ -141,7 +159,6 @@
   }
 
   /* Home */
-
   .home {
     display: flex;
     flex-direction: row-reverse;
@@ -235,7 +252,6 @@
   }
 
   /* Sobre Mí */
-
   .sobreMi {
     padding-bottom: 4rem;
     height: 100vh;
@@ -271,7 +287,6 @@
   }
 
   /* Habilidades */
-
   .habilidades {
     padding-bottom: 8rem;
     position: relative;
@@ -322,30 +337,62 @@
   }
 
   /* Formación */
-
   .formacion {
     align-items: center;
     display: flex;
     flex-direction: column;
     height: 100vh;
     justify-content: center;
-    padding-bottom: 2rem;
+    padding: 10rem 0;
     position: relative;
   }
 
   .formacion h1 {
-    padding-top: 8rem;
+    padding-top: 20rem;
   }
 
+  .cards_container--formacion{
+    padding: 0 15rem 20rem 15rem;
+    align-content: center;
+    justify-content: center;
+  }
   .cards--formacion {
+    align-items: center;
+    border-radius: 0 24px;
+    height: 32rem;
+    justify-content: space-evenly;
     transition: 0.8s all;
+    width: 40rem;
   }
 
   .cards--formacion:hover {
-    border: 1px solid var(--background2);
-    box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%),
-      0 25px 10px -24px rgb(5 5 5 / 10%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .cards--formacion img {
+    margin: 0;
+    padding:0;
+    width: 25rem;
+    height: auto;
+  }
+
+  .cards--formacion p:nth-child(1) {
+    color: #faf9f6;
+    font-family: "Cooper Hewitt";
+    letter-spacing: 0.1rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .cards--formacion p:nth-child(2) {
+    color: #faf9f6;
+    font-family: "Cooper Hewitt";
+    letter-spacing: 0.1rem;
+    font-size: 1.4rem;
   }
 
   /* Proyectos */
@@ -418,19 +465,5 @@
     width: 50%;
     margin: 0;
     padding: 4rem 3rem;
-  }
-}
-
-/*    Mobile Corrections    */
-@media screen and (max-width: 480px) {
-  .switch {
-    right: 5rem;
-  }
-}
-
-/*    Tablet Corrections    */
-@media screen and (min-width: 760px) and (max-width: 980px) {
-  .switch {
-    right: 5rem;
   }
 }
