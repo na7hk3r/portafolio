@@ -66,6 +66,7 @@ document.querySelector('.go-top-container').addEventListener('click', () => {
     });
 });
 
+/*===== Switch Modo claro/oscuro =====*/
 const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 const slider = document.getElementById('slider');
 

@@ -914,7 +914,6 @@ footer {
 }
 
 .container_links--footer a:hover::before {
-  /* ancho final */
   width: 100%;
 }
 

@@ -97,6 +97,10 @@
     right: 5rem;
   }
 
+  .home_text-2{
+    font-size: 4rem;
+  }
+
  .cards_container--formacion{
   align-items:center;
   height: auto;
