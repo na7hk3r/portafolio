@@ -9,7 +9,7 @@ html {
 }
 
 .container--loader {
-  background-color: var(--backround1);
+  background-color: #1f1f1f;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -30,7 +30,7 @@ html {
 }
 
 .loader {
-  color: var(--backround2);
+  color: #3e8d92;
   font-size: 13px;
   position: relative;
   animation-delay: -0.16s;
