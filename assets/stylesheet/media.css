@@ -2,7 +2,7 @@
 @media screen and (min-width: 760px) {
   /* Header */
   .logo {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
   nav.nav_menu.active {
@@ -17,9 +17,10 @@
   }
 
   .container_text-info {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .home_text-1 {
