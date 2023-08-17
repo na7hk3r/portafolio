@@ -898,7 +898,24 @@ footer {
   font-family: "Cooper Hewitt";
   font-size: 1.6rem;
   margin: 0 0.8rem;
+  margin: 15px;
+  position: relative;
   text-decoration: none;
+}
+
+.container_links--footer a:before {
+  content: '';
+  background: var(--background2);
+  position: absolute;
+  bottom: -10px;
+  width: 0;
+  height: 5px;
+  transition: width 0.5s linear;
+}
+
+.container_links--footer a:hover::before {
+  /* ancho final */
+  width: 100%;
 }
 
 .container_redes-footer a {
