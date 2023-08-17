@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
 @font-face {
   font-family: "Cooper Hewitt";
   src: url("../fonts/CooperHewitt-Light.woff") format("woff"),
     url("../fonts/CooperHewitt-Thin.woff") format("woff");
 }
+
 
 [data-theme="light"] {
   --background1: #9ec6c8;
@@ -333,23 +336,23 @@ input:checked + .slider:before {
 .home_text-1 {
   font-family: "Cooper Hewitt";
   color: var(--primary);
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .home_text-2 {
-  font-family: "PT Sans";
+  font-family: 'Caprasimo', cursive;
   color: var(--secondary);
-  font-size: 3.2rem;
+  font-size: 6rem;
   margin-bottom: 1rem;
 }
 
 .home_text-3 {
   font-family: "Cooper Hewitt";
   color: var(--primary);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  width: 28rem;
+  width: 20rem;
   margin: 0 auto;
   text-align: start;
 }
@@ -366,7 +369,7 @@ input:checked + .slider:before {
   color: var(--primary);
   background-color: var(--background1);
   width: 100%;
-  animation: typing 4s steps(28) alternate infinite;
+  animation: typing 3.2s steps(28) alternate infinite;
 }
 
 @keyframes typing {
@@ -385,7 +388,6 @@ input:checked + .slider:before {
   padding: 0.5rem 2rem;
   color: var(--primary);
   font-family: "Cooper Hewitt";
-  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin: 2rem 0;
