@@ -101,6 +101,12 @@
     font-size: 4rem;
   }
 
+  .image-dark,
+  .image-light{
+    width: 10rem;
+    height: 10rem;
+  }
+
  .cards_container--formacion{
   align-items:center;
   height: auto;
@@ -203,7 +209,7 @@
   .home_text-2 {
     font-size: 6rem;
     font-weight: bold;
-    color: var(--secondary);
+    /* color: var(--secondary); */
   }
 
   .home_text-3 {

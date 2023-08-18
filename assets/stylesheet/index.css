@@ -100,6 +100,7 @@ nav.nav_menu.active {
   0% {
     left: 100%;
   }
+
   100% {
     left: 0;
   }
@@ -146,7 +147,7 @@ nav.nav_menu.not-active a {
   position: relative;
 }
 
-span + span {
+span+span {
   margin-top: 0.6rem;
 }
 
@@ -179,10 +180,12 @@ span + span {
     top: 0;
     transform: rotate(0);
   }
+
   50% {
     top: 1rem;
     transform: rotate(0);
   }
+
   100% {
     top: 1rem;
     transform: rotate(45deg);
@@ -194,10 +197,12 @@ span + span {
     top: 0.8rem;
     transform: rotate(45deg);
   }
+
   50% {
     top: 0.8rem;
     transform: rotate(0deg);
   }
+
   100% {
     top: 0;
     transform: rotate(0deg);
@@ -209,10 +214,12 @@ span + span {
     bottom: 0;
     transform: rotate(0);
   }
+
   50% {
     bottom: 0.8rem;
     transform: rotate(0);
   }
+
   100% {
     bottom: 0.8rem;
     transform: rotate(135deg);
@@ -224,10 +231,12 @@ span + span {
     bottom: 0.8rem;
     transform: rotate(135deg);
   }
+
   50% {
     bottom: 0.8rem;
     transform: rotate(0);
   }
+
   100% {
     bottom: 0;
     transform: rotate(0);
@@ -238,6 +247,7 @@ span + span {
   50% {
     transform: scale(0);
   }
+
   100% {
     transform: scale(0);
   }
@@ -247,9 +257,11 @@ span + span {
   0% {
     transform: scale(0);
   }
+
   50% {
     transform: scale(0);
   }
+
   100% {
     transform: scale(1);
   }
@@ -294,11 +306,11 @@ span + span {
   border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: var(--background2);
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -325,6 +337,7 @@ input:checked + .slider:before {
   transition: 0.4s;
   animation: image 2s;
   position: relative;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
 }
 
 .image-light,
@@ -338,14 +351,18 @@ input:checked + .slider:before {
   top: 20%;
   width: 25rem;
   z-index: -20;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
 }
 
 @keyframes floatAnimation {
-  0%, 100% {
-      transform: translateY(0);
+
+  0%,
+  100% {
+    transform: translateY(0);
   }
+
   50% {
-      transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
 
@@ -365,9 +382,14 @@ input:checked + .slider:before {
 
 .home_text-2 {
   font-family: 'Caprasimo', cursive;
-  color: var(--secondary);
   font-size: 6rem;
   margin-bottom: 1rem;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+  background: linear-gradient(to right, var(--background2) 10%, var(--primary));
+  -webkit-background-clip: text;
+  /* background-clip: text; */
+  -webkit-text-fill-color: transparent;
+  /* text-fill-color: transparent; */
 }
 
 .home_text-3 {
@@ -441,9 +463,9 @@ input:checked + .slider:before {
 }
 
 .links img:hover {
-    transform: scale(1.5);
-    transition:.3s ease-in-out;
-    }
+  transform: scale(1.5);
+  transition: .3s ease-in-out;
+}
 
 /* Sobre mí */
 
@@ -958,8 +980,8 @@ footer {
 }
 
 .container_redes-footer img:hover {
-transform: scale(1.5);
-transition:.3s ease-in-out;
+  transform: scale(1.5);
+  transition: .3s ease-in-out;
 }
 
 .container_text--footer {
@@ -1041,10 +1063,12 @@ transition:.3s ease-in-out;
     width: 0;
     height: 0;
   }
+
   50% {
     width: 7rem;
     height: 7rem;
   }
+
   100% {
     width: 6rem;
     height: 6rem;
