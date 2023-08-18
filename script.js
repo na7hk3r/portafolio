@@ -67,15 +67,46 @@ document.querySelector('.go-top-container').addEventListener('click', () => {
 });
 
 /*===== Switch Modo claro/oscuro =====*/
+// const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+// const slider = document.getElementById('slider');
+
+// const setTheme = (theme) => {
+//     document.documentElement.setAttribute('data-theme', theme);
+//     localStorage.setItem('theme', theme);
+// }
+
+// slider.addEventListener('click', ()  => {
+//     let switchToTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
+//     setTheme(switchToTheme);
+
+//     const sunImage = document.querySelector('.image-light');
+//     const moonImage = document.querySelector('.image-dark');
+
+//     sunImage.style.opacity = switchToTheme === 'dark' ? 0 : 1;
+//     moonImage.style.opacity = switchToTheme === 'dark' ? 1 : 0;
+// });
+
+// setTheme(localStorage.getItem('theme') || preferedColorScheme);
+
 const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 const slider = document.getElementById('slider');
+const sunImage = document.querySelector('.image-light');
+const moonImage = document.querySelector('.image-dark');
 
 const setTheme = (theme) => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
-}
 
-slider.addEventListener('click', ()  => {
+    if (theme === 'dark') {
+        sunImage.style.opacity = 0;
+        moonImage.style.opacity = 1;
+    } else {
+        sunImage.style.opacity = 1;
+        moonImage.style.opacity = 0;
+    }
+};
+
+slider.addEventListener('click', () => {
     let switchToTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
     setTheme(switchToTheme);
 });

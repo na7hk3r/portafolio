@@ -324,7 +324,31 @@ input:checked + .slider:before {
   max-width: 65%;
   transition: 0.4s;
   animation: image 2s;
+  position: relative;
 }
+
+.image-light,
+.image-dark {
+  animation: floatAnimation 3s ease infinite alternate;
+  height: 25rem;
+  left: 55%;
+  max-width: 50%;
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  width: 25rem;
+  z-index: -20;
+}
+
+@keyframes floatAnimation {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
 
 .home_info {
   display: flex;
