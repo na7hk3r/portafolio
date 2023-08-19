@@ -318,7 +318,50 @@ input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
-  content: url('../images/dark-ico.png'); 
+  content: url('../images/dark-ico.png');
+}
+
+/* Estilos para el switch de idioma */
+.language-toggle {
+  position: relative;
+  display: flex;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.language-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  transition: background-color 0.3s;
+  z-index: -1;
+}
+
+.language-toggle.active .language-slider {
+  background-color: var(--primary);
+}
+
+.language-label {
+  color: var(--secondary);
+  font-family: "Cooper Hewitt";
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 10px;
+  transition: color 0.3s;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-toggle.active .language-label {
+  color: var(--primary);
+}
+
+.language-toggle input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* Home */

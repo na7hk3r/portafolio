@@ -35,17 +35,22 @@
 
         <nav class="nav_menu not-active">
             <a href="#home" class="active">Home</a>
-            <a href="#sobreMi">Sobre mí</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#formacion">Formación</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
-
-            <label class="switch">
-                <input type="checkbox" id="slider" checked />
-                <span class="slider"></span>
-            </label>
+            <a href="#sobreMi" data-section="menu" data-value="item2">Sobre mí</a>
+            <a href="#habilidades" data-section="menu" data-value="item3">Habilidades</a>
+            <a href="#formacion" data-section="menu" data-value="item4">Formación</a>
+            <a href="#proyectos" data-section="menu" data-value="item5">Proyectos</a>
+            <a href="#contacto" data-section="menu" data-value="item6">Contacto</a>
         </nav>
+        <label class="switch">
+            <input type="checkbox" id="slider" checked />
+            <span class="slider"></span>
+        </label>
+
+        <label class="language-toggle">
+            <input type="checkbox" id="language-toggle" />
+            <span class="language-slider"></span>
+            <span class="language-label">ES</span>
+        </label>
 
         <div id="button" class="btn not-active">
             <span></span>

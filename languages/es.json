@@ -1,0 +1,47 @@
+{
+    "menu": {
+        "item2": "Sobre mí",
+        "item3": "Habilidades",
+        "item4": "Formación",
+        "item5": "Proyectos",
+        "item6": "Contacto"
+    },
+
+    "home": {
+        "home_text-1": "hello w0rld!, Soy",
+        "home_text-3": "Desarrollador web",
+        "parrafo-info": "Estudiante de programación Full Stack, enfocado al Desarrollo Web Frontend. Busco crear proyectos que brinden la mejor experiencia para el usuario.",
+        "cv_button": "Contacto"
+    },
+
+    "sobre-mi": {
+        "title": "Sobre mí",
+        "texto_sobreMi": "Soy un apasionado del aprendizaje autodidacta, estudiando actualmente Desarrollo Full-Stack en Digital House. Mi objetivo es obtener empleo en el área de IT para adquirir experiencia, ampliar mis conocimientos y fortalecer mi carrera profesional. Soy una persona creativa, empática y entusiasta, con habilidades destacadas en el trabajo en equipo, comunicación asertiva y resolución de problemas. Responsable y proactivo, disfruto aprender de los demás y superarme continuamente."
+    },
+
+    "habilidades": {
+        "title": "Habilidades"
+    },
+
+    "proyectos": {
+        "title": "Proyectos",
+        "title-proyecto1": "eMercado",
+        "info-proyecto1": "Proyecto de e-commerce desarrollado para el egreso de Jóvenes a Programar 2022. Proyecto de ocho entregas con deadlines quincenales.",
+        "title-proyecto2": "Portafolio Personal",
+        "info-proyecto2": "Mi portafolio para poner en práctica lo aprendido y como base para seguir jugando, practicando e implementando funcionalidades.",
+        "title-proyecto3": "Encriptador de Texto",
+        "info-proyecto3": "Proyecto de Encriptador de Texto en JavaScript propuesto como challenge en Alura-ONE",
+        "title-proyecto4": "Proyecto Integrador Frontend",
+        "info-proyecto4": "Sitio web 'sportit' para promocionar la copa Telcel-Huawei de Tennis en Mexico 2022.",
+        "title-proyecto5": "UY Construcciones",
+        "info-proyecto5": "Sitio web para cliente Uy Construcciones, empresa uruguaya de construcción y mantenimiento.",
+        "title-proyecto6": "Petshop - Front Cat&Dog",
+        "info-proyecto6": "Maquetación deLanding Page para Petshop, proyecto de materia Frontend I"
+    },
+
+    "contacto": {
+        "title": "Contacto",
+        "text": "Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.",
+        "btn-enviar": "Enviar"
+    }
+}

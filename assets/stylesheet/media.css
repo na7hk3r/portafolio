@@ -1,5 +1,6 @@
 /***     Tablet      ***/
 @media screen and (min-width: 760px) {
+
   /* Header */
   .logo {
     font-size: 1.8rem;
@@ -93,28 +94,25 @@
 
 /***    Mobile - Tablet Fix    ***/
 @media screen and (max-width: 480px) {
-  .switch {
-    right: 5rem;
-  }
 
-  .home_text-2{
+  .home_text-2 {
     font-size: 4rem;
   }
 
   .image-dark,
-  .image-light{
+  .image-light {
     width: 10rem;
     height: 10rem;
   }
 
- .cards_container--formacion{
-  align-items:center;
-  height: auto;
-  width: 100%;
- }
+  .cards_container--formacion {
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
 }
 
-.cards--formacion{
+.cards--formacion {
   width: 28rem;
   height: 30rem;
   gap: .8em;
@@ -128,6 +126,7 @@
 
 /***      Desktop     ***/
 @media screen and (min-width: 980px) {
+
   /* Header */
   .header {
     justify-content: flex-end;
@@ -311,7 +310,9 @@
     display: inline;
     position: absolute;
     width: 8rem;
-    margin: 45rem 0 0 /* 41rem */ 20%;
+    margin: 45rem 0 0
+      /* 41rem */
+      20%;
     background-attachment: fixed;
   }
 
@@ -361,11 +362,12 @@
     padding-top: 20rem;
   }
 
-  .cards_container--formacion{
+  .cards_container--formacion {
     padding: 0 15rem 20rem 15rem;
     align-content: center;
     justify-content: center;
   }
+
   .cards--formacion {
     align-items: center;
     border-radius: 0 24px;
@@ -383,7 +385,7 @@
 
   .cards--formacion img {
     margin: 0;
-    padding:0;
+    padding: 0;
     width: 25rem;
     height: auto;
   }
@@ -397,7 +399,7 @@
     text-align: center;
     margin-top: 0;
   }
-  
+
   .cards--formacion p:nth-child(2) {
     color: #faf9f6;
     font-family: "Cooper Hewitt";
