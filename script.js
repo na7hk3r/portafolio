@@ -67,31 +67,11 @@ document.querySelector('.go-top-container').addEventListener('click', () => {
 });
 
 /*===== Switch Modo claro/oscuro =====*/
-// const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-// const slider = document.getElementById('slider');
-
-// const setTheme = (theme) => {
-//     document.documentElement.setAttribute('data-theme', theme);
-//     localStorage.setItem('theme', theme);
-// }
-
-// slider.addEventListener('click', ()  => {
-//     let switchToTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
-//     setTheme(switchToTheme);
-
-//     const sunImage = document.querySelector('.image-light');
-//     const moonImage = document.querySelector('.image-dark');
-
-//     sunImage.style.opacity = switchToTheme === 'dark' ? 0 : 1;
-//     moonImage.style.opacity = switchToTheme === 'dark' ? 1 : 0;
-// });
-
-// setTheme(localStorage.getItem('theme') || preferedColorScheme);
-
 const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 const slider = document.getElementById('slider');
 const sunImage = document.querySelector('.image-light');
 const moonImage = document.querySelector('.image-dark');
+const icon = document.querySelector('.slider:before');
 
 const setTheme = (theme) => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -104,6 +84,12 @@ const setTheme = (theme) => {
         sunImage.style.opacity = 1;
         moonImage.style.opacity = 0;
     }
+
+if (theme === 'dark') {
+    icon.style.content = "url('ruta-del-ico-light.png')";
+} else {
+    icon.style.content = "url('ruta-del-ico-dark.png')";
+}
 };
 
 slider.addEventListener('click', () => {

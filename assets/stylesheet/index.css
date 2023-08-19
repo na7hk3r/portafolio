@@ -294,16 +294,20 @@ span+span {
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: var(--primary);
   -webkit-transition: 0.4s;
-  transition: 0.4s;
+  align-items: center;
+  background-color: #FFF;
   border-radius: 50%;
+  bottom: 4px;
+  content: "";
+  content: url('../images/light-ico.png');
+  display: flex;
+  height: 26px;
+  justify-content: center;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
 }
 
 input:checked+.slider {
@@ -314,6 +318,7 @@ input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+  content: url('../images/dark-ico.png'); 
 }
 
 /* Home */
