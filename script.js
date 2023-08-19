@@ -86,9 +86,9 @@ const setTheme = (theme) => {
     }
 
 if (theme === 'dark') {
-    icon.style.content = "url('ruta-del-ico-light.png')";
+    icon.style.content = "url('./assets/images/light-ico.png')";
 } else {
-    icon.style.content = "url('ruta-del-ico-dark.png')";
+    icon.style.content = "url('./assets/images/dark-ico.png')";
 }
 };
 
