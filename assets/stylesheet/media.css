@@ -134,9 +134,18 @@
 }
 
 .cards--formacion {
-  width: 28rem;
+  width: 34rem;
   height: 30rem;
   gap: .8em;
+  justify-content: space-evenly;
+}
+
+.cards--habilidades{
+  justify-content: space-evenly;
+}
+
+.cards--proyectos {
+  max-width: 34rem;
 }
 
 @media screen and (min-width: 760px) and (max-width: 980px) {
