@@ -31,7 +31,7 @@
     </div>
 
     <header class="header">
-        <a href="#home" class="logo">Sergio Curbelo</a>
+        <a href="#home" class="logo"><i class="fa-solid fa-house"></i> S.Curbelo</a>
 
         <nav class="nav_menu not-active">
             <a href="#home" class="active">Home</a>
@@ -45,15 +45,15 @@
             <input type="checkbox" id="slider" checked />
             <span class="slider"></span>
         </label>
-
-        <label for="language-label" class="language-toggle" id="language-toggle">
-            <span name="language-label" class="language-label" data-language="en">EN</span>
-        </label>
-        <span class="language-label"> / </span>
-        <label for="language-label" class="language-toggle" id="language-toggle">
-            <span name="language-label" class="language-label" data-language="es">ES</span>
-        </label>
-
+        <div class="lang-switch">
+            <label for="language-label" class="language-toggle" id="language-toggle">
+                <span name="language-label" class="language-label" data-language="en">EN</span>
+            </label>
+            <span class="language-label"> / </span>
+            <label for="language-label" class="language-toggle" id="language-toggle">
+                <span name="language-label" class="language-label" data-language="es">ES</span>
+            </label>
+        </div>
         <div id="button" class="btn not-active">
             <span></span>
             <span></span>
@@ -118,7 +118,8 @@
             <div class="container_content-sobreMi">
                 <div class="container_texto-sobreMi">
                     <span class="title_sobreMi">Sergio Mathias Curbelo | '94</span>
-                    <span class="texto_sobreMi" data-section="sobre-mi" data-value="texto_sobreMi">Soy un apasionado del aprendizaje autodidacta, estudiando
+                    <span class="texto_sobreMi" data-section="sobre-mi" data-value="texto_sobreMi">Soy un apasionado del
+                        aprendizaje autodidacta, estudiando
                         actualmente Desarrollo Full-Stack en Digital House. Mi objetivo es
                         obtener empleo en el área de IT para adquirir experiencia, ampliar
                         mis conocimientos y fortalecer mi carrera profesional. Soy una
@@ -441,7 +442,8 @@
                             required></textarea>
 
                         <div class="btn_form--contacto">
-                            <button id="btn-enviar" type="submit" data-section="contacto" data-value="btn-enviar">Enviar</button>
+                            <button id="btn-enviar" type="submit" data-section="contacto"
+                                data-value="btn-enviar">Enviar</button>
                         </div>
                     </form>
                 </div>

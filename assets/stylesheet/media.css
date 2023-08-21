@@ -11,6 +11,14 @@
     margin-left: 50%;
     top: 5.9rem;
   }
+  .header{
+  justify-content: flex-start;
+  gap: 14%;
+  }
+
+  .lang-switch{
+    display: flex;
+  }
 
   /* Home */
   .image_home {
@@ -94,7 +102,20 @@
 
 /***    Mobile - Tablet Fix    ***/
 @media screen and (max-width: 480px) {
+  .header{
+    justify-content: flex-start;
+    gap: 5px;
+    align-items: center;
+  }
 
+  .lang-switch{
+    display: flex;
+    width: auto;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
   .home_text-2 {
     font-size: 4rem;
   }
@@ -131,6 +152,9 @@
   .header {
     justify-content: flex-end;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
 
   .logo {
