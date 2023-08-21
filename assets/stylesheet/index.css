@@ -954,6 +954,11 @@ footer {
   letter-spacing: 2px;
 }
 
+.icon-footer {
+  width: 7rem;
+}
+
+
 .container_links--footer {
   padding: 2rem 0;
   list-style: none;
@@ -995,11 +1000,14 @@ footer {
   margin: 0 0.5rem 1.5rem 0.5rem;
   font-size: 3em;
   color: var(--primary);
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .container_redes-footer i:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition: 0.3s ease-in-out;
+  opacity: 1;
 }
 
 .container_redes-footer img:hover {
