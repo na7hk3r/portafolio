@@ -473,7 +473,7 @@
   }
 
   .cards--proyectos {
-    width: 40rem;
+    max-width: 40rem;
     height: 40rem;
     display: flex;
     flex-direction: column;
