@@ -46,10 +46,12 @@
             <span class="slider"></span>
         </label>
 
-        <label class="language-toggle">
-            <input type="checkbox" id="language-toggle" />
-            <span class="language-slider"></span>
-            <span class="language-label">ES</span>
+        <label for="language-label" class="language-toggle" id="language-toggle">
+            <span name="language-label" class="language-label" data-language="en">EN</span>
+        </label>
+        <span class="language-label"> / </span>
+        <label for="language-label" class="language-toggle" id="language-toggle">
+            <span name="language-label" class="language-label" data-language="es">ES</span>
         </label>
 
         <div id="button" class="btn not-active">
@@ -70,16 +72,16 @@
 
             <div class="home_info">
                 <div class="container_text-info">
-                    <p class="home_text-1">hello w0rld!, Soy</p>
+                    <p class="home_text-1" data-section="home" data-value="home_text-1">hello w0rld!, Soy</p>
                     <p class="home_text-2">Sergio Curbelo</p>
                 </div>
 
                 <div>
-                    <p class="home_text-3 text-type">Desarrollador web</p>
+                    <p class="home_text-3 text-type" data-section="home" data-value="home_text-3">Desarrollador web</p>
                 </div>
 
                 <div class="container_parrafo-info">
-                    <p>
+                    <p data-section="home" data-value="parrafo-info">
                         Estudiante de programación Full Stack, enfocado al Desarrollo Web
                         Frontend. Busco crear proyectos que brinden la mejor experiencia
                         para el usuario.
@@ -88,7 +90,7 @@
 
                 <div class="container_button">
                     <a href="#contacto">
-                        <button class="cv_button">Contacto</button>
+                        <button class="cv_button" data-section="home" data-value="contact_button">Contacto</button>
                     </a>
                 </div>
             </div>
@@ -111,12 +113,12 @@
 
         <!-- Sobre mí -->
         <section class="sobreMi" id="sobreMi">
-            <h1>Sobre mí</h1>
+            <h1 data-section="sobre-mi" data-value="title">Sobre mí</h1>
 
             <div class="container_content-sobreMi">
                 <div class="container_texto-sobreMi">
                     <span class="title_sobreMi">Sergio Mathias Curbelo | '94</span>
-                    <span class="texto_sobreMi">Soy un apasionado del aprendizaje autodidacta, estudiando
+                    <span class="texto_sobreMi" data-section="sobre-mi" data-value="texto_sobreMi">Soy un apasionado del aprendizaje autodidacta, estudiando
                         actualmente Desarrollo Full-Stack en Digital House. Mi objetivo es
                         obtener empleo en el área de IT para adquirir experiencia, ampliar
                         mis conocimientos y fortalecer mi carrera profesional. Soy una
@@ -134,7 +136,7 @@
 
         <!-- Habilidades -->
         <section class="habilidades" id="habilidades">
-            <h1>Habilidades</h1>
+            <h1 data-section="habilidades" data-value="title">Habilidades</h1>
 
             <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos1-habilidades" />
             <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos2-habilidades" />
@@ -238,7 +240,7 @@
 
         <!-- Proyectos -->
         <section class="proyectos" id="proyectos">
-            <h1>Proyectos</h1>
+            <h1 data-section="proyectos" data-value="title">Proyectos</h1>
 
             <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos1-proyectos" />
             <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos2-proyectos" />
@@ -251,8 +253,8 @@
                     </div>
 
                     <div class="container_textCard--proyectos">
-                        <h2>eMercado</h2>
-                        <p>
+                        <h2 data-section="proyectos" data-value="title-proyecto1">eMercado</h2>
+                        <p data-section="proyectos" data-value="info-proyecto1">
                             Proyecto de e-commerce desarrollado para el egreso de Jóvenes a
                             Programar 2022. Proyecto de ocho entregas con deadlines
                             quincenales.
@@ -280,8 +282,8 @@
                     </div>
 
                     <div class="container_textCard--proyectos">
-                        <h2>Portafolio Personal</h2>
-                        <p>
+                        <h2 data-section="proyectos" data-value="title-proyecto2">Portafolio Personal</h2>
+                        <p data-section="proyectos" data-value="info-proyecto2">
                             Portafolio para poner en práctica lo aprendido en desarrollo
                             front-end y como base para seguir jugando, practicando e
                             implementando funcionalidades.
@@ -309,8 +311,8 @@
                     </div>
 
                     <div class="container_textCard--proyectos">
-                        <h2>Encriptador de Textos</h2>
-                        <p>
+                        <h2 data-section="proyectos" data-value="title-proyecto3">Encriptador de Textos</h2>
+                        <p data-section="proyectos" data-value="info-proyecto3">
                             Proyecto de Encriptador de Texto en JavaScript propuesto como
                             challenge en Alura-ONE.
                         </p>
@@ -340,8 +342,8 @@
                     </div>
 
                     <div class="container_textCard--proyectos">
-                        <h2>Proyecto Integrador Frontend</h2>
-                        <p>
+                        <h2 data-section="proyectos" data-value="title-proyecto4">Proyecto Integrador Frontend</h2>
+                        <p data-section="proyectos" data-value="info-proyecto4">
                             Sitio web 'sportit' para promocionar la copa Telcel-Huawei de Tennis en Mexico 2022.
                         </p>
                     </div>
@@ -367,8 +369,8 @@
                     </div>
 
                     <div class="container_textCard--proyectos">
-                        <h2>UY Construcciones</h2>
-                        <p>
+                        <h2 data-section="proyectos" data-value="title-proyecto5">UY Construcciones</h2>
+                        <p data-section="proyectos" data-value="info-proyecto5">
                             Sitio web para cliente Uy Construcciones 2023, empresa de
                             Construcción de la ciudad de Las Piedras, Canelones.
                         </p>
@@ -395,8 +397,8 @@
                     </div>
 
                     <div class="container_textCard--proyectos">
-                        <h2>Petshop - Front Cat&Dog</h2>
-                        <p>
+                        <h2 data-section="proyectos" data-value="title-proyecto6">Petshop - Front Cat&Dog</h2>
+                        <p data-section="proyectos" data-value="info-proyecto6">
                             Maquetación de Landing Page para Petshop, proyecto de materia Frontend I.
                         </p>
                     </div>
@@ -420,26 +422,26 @@
 
         <!-- Contacto / Formulario Netlify -->
         <section class="contacto" id="contacto">
-            <h1>Contacto</h1>
+            <h1 data-section="contacto" data-value="title">Contacto</h1>
 
             <div class="container_box--contacto" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <div class="container--contacto">
                     <div class="container_text--contacto">
-                        <p>
+                        <p data-section="contacto" data-value="text">
                             Completa el siguiente formulario y me pondré en contacto contigo
                             lo antes posible.
                         </p>
                     </div>
 
                     <form id="form" class="form-contact" name="contacto-portafolio" netlify>
-                        <input id="nombre" type="text" name="name" placeholder="Nombre" required />
+                        <input id="nombre" type="text" name="name" placeholder="Name" required />
                         <input id="email" type="email" name="email" placeholder="E-mail" required />
-                        <input id="asunto" type="text" name="affair" placeholder="Asunto" required />
-                        <textarea id="mensaje" cols="20" rows="4" name="message" placeholder="Mensaje"
+                        <input id="asunto" type="text" name="affair" placeholder="Subject" required />
+                        <textarea id="mensaje" cols="20" rows="4" name="message" placeholder="Message"
                             required></textarea>
 
                         <div class="btn_form--contacto">
-                            <button id="btn-enviar" type="submit">Enviar</button>
+                            <button id="btn-enviar" type="submit" data-section="contacto" data-value="btn-enviar">Enviar</button>
                         </div>
                     </form>
                 </div>
@@ -471,11 +473,11 @@
 
             <div class="container_links--footer">
                 <a class="link-nav" href="#home">Home</a>
-                <a class="link-nav" href="#sobreMi">Sobre mí</a>
-                <a class="link-nav" href="#habilidades">Habilidades</a>
-                <a class="link-nav" href="#formacion">Formación</a>
-                <a class="link-nav" href="#proyectos">Proyectos</a>
-                <a class="link-nav" href="#contacto">Contacto</a>
+                <a class="link-nav" href="#sobreMi" data-section="menu" data-value="item2">Sobre mí</a>
+                <a class="link-nav" href="#habilidades" data-section="menu" data-value="item3">Habilidades</a>
+                <a class="link-nav" href="#formacion" data-section="menu" data-value="item4">Formación</a>
+                <a class="link-nav" href="#proyectos" data-section="menu" data-value="item5">Proyectos</a>
+                <a class="link-nav" href="#contacto" data-section="menu" data-value="item6">Contacto</a>
             </div>
 
             <div class="container_text--footer">

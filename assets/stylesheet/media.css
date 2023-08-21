@@ -168,6 +168,10 @@
     display: none;
   }
 
+  span+span {
+    margin-top: 0;
+  }
+
   /* Home */
   .home {
     display: flex;

@@ -10,6 +10,36 @@ window.addEventListener("load", () => {
   contenedorLoader.style.visibility = "hidden";
 });
 
+/*===== Switch Lenguaje =====*/
+const textsToChange = document.querySelectorAll("[data-section]");
+
+const changeLanguage = async (language) => {
+  const requestJson = await fetch(`./languages/${language}.json`);
+  const texts = await requestJson.json();
+
+  for (let textToChange of textsToChange) {
+    const section = textToChange.dataset.section;
+    const value = textToChange.dataset.value;
+
+    textToChange.innerHTML = texts[section][value];
+  }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  changeLanguage("en");
+
+  const languageLabels = document.querySelectorAll(".language-label");
+
+  languageLabels.forEach((label) => {
+    label.addEventListener("click", (e) => {
+      const language = label.dataset.language;
+      if (language) {
+        changeLanguage(language);
+      }
+    });
+  });
+});
+
 /*===== Header =====*/
 window.addEventListener("scroll", () => {
   const header = document.querySelector("header");
@@ -103,7 +133,3 @@ slider.addEventListener("click", () => {
 });
 
 setTheme(localStorage.getItem("theme") || preferedColorScheme);
-
-/*===== Switch Lenguaje =====*/
-const languageToggle = document.getElementById("language-toggle");
-const languageLabel = document.querySelector(".language-label");

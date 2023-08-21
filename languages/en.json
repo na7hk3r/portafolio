@@ -1,0 +1,47 @@
+{
+"menu": {
+    "item2": "About me",
+    "item3": "Skills",
+    "item4": "Training",
+    "item5": "Projects",
+    "item6": "Contact"
+},
+
+"home": {
+    "home_text-1": "hello w0rld! I'm",
+    "home_text-3": "Web Developer",
+    "parrafo-info": "Full Stack programming student, focused on Frontend Web Development. I aim to create projects that provide the best user experience.",
+    "contact_button": "Contact"
+},
+
+"sobre-mi": {
+    "title": "About me",
+    "texto_sobreMi": "I am a self-directed learning enthusiast, currently studying Full-Stack Development at Digital House. My aim is to secure a position in the IT field to gain experience, expand my knowledge, and bolster my professional career. I am a creative, empathetic, and enthusiastic individual with strong abilities in teamwork, effective communication, and problem-solving. Responsible and proactive, I enjoy learning from others and consistently pushing my limits."
+},
+
+"habilidades": {
+    "title": "Skills"
+},
+
+"proyectos": {
+    "title": "Projects",
+    "title-proyecto1": "eMarket",
+    "info-proyecto1": "E-commerce project developed for the Jóvenes a Programar 2022 graduation. An eight-delivery project with biweekly deadlines.",
+    "title-proyecto2": "Personal Portfolio",
+    "info-proyecto2": "My portfolio to put into practice what I've learned and as a foundation to continue experimenting, practicing, and implementing functionalities.",
+    "title-proyecto3": "Text Encryptor",
+    "info-proyecto3": "Text Encryptor project in JavaScript proposed as a challenge at Alura-ONE.",
+    "title-proyecto4": "Frontend Integration Project",
+    "info-proyecto4": "'Sportit' website to promote the Telcel-Huawei Tennis Cup in Mexico 2022.",
+    "title-proyecto5": "UY Constructions",
+    "info-proyecto5": "Website for Uy Constructions client, a Uruguayan construction and maintenance company.",
+    "title-proyecto6": "Petshop - Front Cat&Dog",
+    "info-proyecto6": "Landing Page layout for Petshop, project for Frontend I course."
+    },
+
+"contacto": {
+    "title": "Contact",
+    "text": "Complete the form below and I will contact you as soon as possible.",
+    "btn-enviar": "Send"
+}
+}
