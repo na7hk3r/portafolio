@@ -220,12 +220,12 @@
 
   .image_home {
     object-fit: contain;
-    max-width: 60%;
+    max-width: 57rem;
   }
 
   .image-light,
   .image-dark {
-    top: 15%;
+    top: 17%;
   }
 
   .home_info {
