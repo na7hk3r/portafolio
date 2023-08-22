@@ -214,7 +214,7 @@
   }
 
   .container_image-home {
-    width: 55%;
+    width: 45vw;
     padding-right: 4rem;
   }
 
@@ -223,7 +223,7 @@
   }
 
   .home_info {
-    width: 40%;
+    width: 55vw;
     padding-left: 6rem;
   }
 
@@ -243,15 +243,15 @@
   }
 
   .home_text-2 {
-    font-size: 6rem;
+    font-size: 8em;
     font-weight: bold;
     /* color: var(--secondary); */
   }
 
   .home_text-3 {
     margin: 0 0 2rem 0;
-    font-size: 1.8rem;
-    width: 22rem;
+    font-size: 2.5em;
+    width: 30rem;
     letter-spacing: 0.2rem;
   }
 
@@ -263,9 +263,10 @@
   .container_parrafo-info p {
     color: var(--primary);
     font-family: "Cooper Hewitt";
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     letter-spacing: 2px;
-    line-height: 2.2rem;
+    line-height: 2.6rem;
+    width: 76%;
   }
 
   .container_button {
@@ -277,6 +278,9 @@
     color: #FFF;
     margin-right: 1rem;
     transition: ease-in-out 0.2s;
+    width: 15rem;
+    height: 3.5rem;
+    font-size: 1.6em;
   }
 
   .cv_button:hover {
