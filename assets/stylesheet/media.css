@@ -406,11 +406,11 @@
   }
 
   .formacion h1 {
-    padding-top: 20rem;
+    padding-top: 5rem;
   }
 
   .cards_container--formacion {
-    padding: 0 15rem 20rem 15rem;
+    /* padding: 0 15rem 20rem 15rem; */
     align-content: center;
     justify-content: center;
   }
@@ -460,6 +460,7 @@
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
+    height: 100vh;
   }
 
   .puntos1-proyectos {
@@ -480,15 +481,16 @@
   .cards_container--proyectos {
     flex-direction: row;
     justify-content: center;
+    margin: 0 0 3rem 0;
   }
 
   .cards--proyectos {
-    max-width: 40rem;
-    height: 40rem;
     display: flex;
     flex-direction: column;
+    height: 40rem;
     justify-content: space-between;
     margin: 0 1.5rem;
+    max-width: 40rem;
     z-index: 1;
   }
 
@@ -497,6 +499,10 @@
   }
 
   /* Contacto */
+
+  .contacto {
+    height: 68vh;
+  }
 
   .contacto h1 {
     padding: 8rem 0 2.5rem 0;
