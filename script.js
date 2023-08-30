@@ -61,9 +61,19 @@ btn.addEventListener("click", function () {
   }
 });
 
+/*===== Cerrar el menú al hacer clic en un ítem =====*/
+document.querySelectorAll(".nav_menu a").forEach((item) => {
+  item.addEventListener("click", () => {
+    btn.classList.remove("active");
+    btn.classList.add("not-active");
+    document.querySelector(".nav_menu").classList.remove("active");
+    document.querySelector(".nav_menu").classList.add("not-active");
+  });
+});
+
 /*===== class active por secciones =====*/
 window.addEventListener("scroll", () => {
-  const scrollY = window.pageYOffset;
+  const scrollY = window.scrollY;
   sectionAll.forEach((current) => {
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 100;
@@ -102,10 +112,11 @@ const preferedColorScheme = window.matchMedia("(prefers-color-scheme: dark)")
   .matches
   ? "dark"
   : "light";
+
 const slider = document.getElementById("slider");
+const icon = document.querySelector(".slider:before");
 const sunImage = document.querySelector(".image-light");
 const moonImage = document.querySelector(".image-dark");
-const icon = document.querySelector(".slider:before");
 
 const setTheme = (theme) => {
   document.documentElement.setAttribute("data-theme", theme);
